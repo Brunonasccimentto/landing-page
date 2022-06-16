@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(243, 248, 228);
+    background-color: white;
 }
 
 html{
@@ -26,7 +26,7 @@ a:hover{
 }
 
 .c1{
-    background-color:rgb(243, 248, 228);
+    background-color: white;
     align-self: center;
     list-style: none;
     font-weight: 700;
@@ -406,7 +406,7 @@ input:focus{
 #mServices{
     margin: auto;
     margin-left: 6px;
-    background-color: rgb(243, 248, 228);
+    background-color: white;
     border-radius: 0px;
     padding: 15px;
     padding-left: 30px;
@@ -418,7 +418,7 @@ input:focus{
 
 #mServices:hover{
     background-color:rgba(94, 67, 14, 0.705) ;
-    color: rgb(243, 248, 228);
+    color: white;
 }
 
 .i15{
