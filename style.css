@@ -253,6 +253,10 @@ input:focus{
     cursor: pointer;
 }
 
+#sobre span:hover{
+    filter: brightness(200%);
+}
+
 .difere{
     display: flex;
     flex-direction: row;
