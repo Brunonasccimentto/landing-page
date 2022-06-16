@@ -48,7 +48,7 @@ a:hover{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    
+    width: 100%;
 }
 
 li{
@@ -323,7 +323,7 @@ input:focus{
 }
 
 .i4{
-    width: 980px;
+    width: 100%;
     height: 50px;
     margin: auto;
     font-family: 'STIX Two Text';
@@ -429,7 +429,6 @@ input:focus{
 }
 
 .mapouter{
-    margin: auto;
     padding-top: 50px;
 }
 
@@ -451,6 +450,7 @@ footer{
     width: 600px;
     padding-top: 50px;
     font-size: 18px;
+    text-align: center;
 }
 
 .iconFoot{
@@ -464,6 +464,11 @@ footer{
 
 .cell span{
     font-size: 30px;
+}
+
+iframe{
+    width: 80%;
+    height: 500px;
 }
 
 
@@ -488,9 +493,10 @@ footer{
 
     #c2Text{
         margin-left: 0px;
-}
+    }
     
 }
+
 
 @media screen and (max-width: 930px){
 
@@ -511,7 +517,7 @@ footer{
     }
 
     #c2Text{
-        width: 360px;
+        width: 400px;
         font-size: 15px;
         line-height: 30px;
         
@@ -579,33 +585,42 @@ footer{
     }
 
     iframe{
-        width: 40%;
-        margin-right: 695px;
+        width: 80%;
         height: 500px;
+    }
+    .gmap_canvas{
+        width: 100px;
+        background-color: aqua;
+    }
+    .i4{
+        width: 100%;
+    }
 
-}
-
+    .i4 h3{
+        font-size: 36px;
+    }
+    
 @media screen and (max-width: 685px){
 
     .c2{
         flex-wrap: wrap;
-        height: 600px;
+        height: 700px;
     }
     
     #c2Text{
         margin: auto;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     
     .formulario{
         margin: auto;
-        margin-top: 150px;
+        margin-top: 250px;
         display: block;
     }
 
     .difere{
         flex-wrap: wrap;
-        margin-top: 550px;
+        margin-top: 600px;
     }
     
     .rect{
