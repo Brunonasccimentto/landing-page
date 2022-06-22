@@ -76,6 +76,10 @@ button:hover{
     color: rgba(255, 255, 255, 0.904);
     cursor:pointer
 }
+button a:hover{
+    color: rgba(255, 255, 255, 0.904);
+    cursor:pointer
+}
 
 
 #hide{
@@ -254,7 +258,7 @@ input:focus{
 }
 
 #sobre span:hover{
-    filter: brightness(200%);
+    filter: brightness(300%);
 }
 
 .difere{
@@ -615,7 +619,7 @@ iframe{
     .formulario{
         margin: auto;
         margin-top: 250px;
-        display: block;
+        border: 2px solid black;
     }
 
     .difere{
