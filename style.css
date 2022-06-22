@@ -10,7 +10,7 @@ html{
 
 a{
     text-decoration: none;
-    color: #4a4958;
+    color: #232329;
 }
 
 a:hover{
@@ -67,17 +67,17 @@ button{
     transition-property: background-color, color;
     transition-duration: 400ms, 400ms;
     margin-left: 100px;
-    color: #212027;
+    color: #232329;
     background-color: rgb(116, 122, 99);
     
 }
 
 button:hover{
-    color: rgba(255, 255, 255, 0.904);
+    color: white;
     cursor:pointer
 }
 button a:hover{
-    color: rgba(255, 255, 255, 0.904);
+    color: white;
     cursor:pointer
 }
 
