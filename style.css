@@ -44,7 +44,7 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    margin-top: 108px;
+    margin-top: 100px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -81,23 +81,47 @@ button a:hover{
     cursor:pointer
 }
 
-
-#hide{
+.mobs{
     display: none;
-    margin-right: 20px;
 }
 
-#show{
+
+.hide{
+    display: none;
     margin-right: 20px;
+
+}
+
+.show{
+    margin-right: 20px;
+    display: inline-block;
+    
+}
+
+#menu{
+    width: 30px;
+    padding: 10px;
+    display: none;
+}
+
+.nav{
+    display: block;
+ }
+
+.nav img{
+    display: none;
 }
 
 .logo{
     float: left;
     width: 100px;
     margin-top: 2px;
-    margin-left: 25px;
+    margin-left: 0px;
 }
 
+#back{
+    display: none;
+}
 
 .userIcon{
     
@@ -226,6 +250,19 @@ input:focus{
     padding-right: 10px;
 }
 
+#exit{
+    width: 30px;
+    float: right;
+    margin-top: -45px;
+    padding: 0;
+    background-color: #ffffffbb;
+    padding: 5px;
+    border-radius: 50px;
+    margin-right: -40px;
+    cursor: pointer;
+}
+
+
 .midIcon{
     display: inline-block;
     padding: 5px
@@ -272,7 +309,6 @@ input:focus{
     font-weight: 500;
     letter-spacing: 1px;
     text-shadow: 1px 1px black;
-
 }
 
 .rect{
@@ -280,11 +316,11 @@ input:focus{
     height: 300px;
     margin-top: -50px;
     border-radius: 15px;
-
 }
 
 .rect:hover{
-    transform:translateY(30px)
+    transform:translateY(30px);
+    
 }
 
 .rect p{
@@ -345,7 +381,6 @@ input:focus{
 .i4 h3{
     color: black;
     font-size: 46px;
-    line-height: 1px;
     margin-top: -5px;
 }
 
@@ -378,28 +413,30 @@ input:focus{
     transition-duration: 1s;
 }
 
-.services h4, p, span{
+.services h4, p{
     margin-top: 0px;
     padding: 15px;
     margin-top: 10px;
 }
 
+.mais{
+    padding: 15px;
+}
+
 .services img{
     margin-left: 15px;
     margin-right: 15px;
-    margin-top: 20px;
-}
-
-.services p, span{
-    font-size: 15px;
-}
-
-.services span{
+    margin-top: 10px;
+    width: 25px;
     float: left;
 }
 
-.arrow{
-    width: 25px;
+.services{
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.services span{
     float: left;
 }
 
@@ -451,15 +488,15 @@ footer{
 
 .foot{
     height: 150px;
-    width: 600px;
+    width: 700px;
     padding-top: 50px;
     font-size: 18px;
-    text-align: center;
 }
 
 .iconFoot{
-    padding-right: 50px;
-    margin-top: -5px;
+    padding-right:50px;
+    width: 100px;
+    float: left;
 }
 
 .cell{
@@ -510,10 +547,6 @@ iframe{
     button{
         font-size: 14px;
         
-    }
-
-    #hide, #show{
-        margin-right: 0px;
     }
 
     .logo{
@@ -597,7 +630,7 @@ iframe{
         background-color: aqua;
     }
     .i4{
-        width: 100%;
+        width: 80%;
     }
 
     .i4 h3{
@@ -606,25 +639,28 @@ iframe{
     
 @media screen and (max-width: 685px){
 
+
+
     .c2{
-        flex-wrap: wrap;
         height: 700px;
+        margin-top: 0;
     }
     
     #c2Text{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 100px;
+        text-align: start;
     }
     
     .formulario{
-        margin: auto;
-        margin-top: 250px;
-        border: 2px solid black;
+        margin-top: 150px;
+        position: fixed;
+        margin-left: 12%;
+        background-color: white;
     }
 
     .difere{
         flex-wrap: wrap;
-        margin-top: 600px;
     }
     
     .rect{
@@ -632,15 +668,104 @@ iframe{
         margin-top: 50px;
     }
 
-    li{
-        line-height: 0px;
+    .nav{
+       position: fixed;
+       height: 100%;
+       padding: 0px;
+       width: 300px;
+       margin-top: 0px;
+       background-color: rgba(116, 122, 99, 0.959);
+       text-align: start;
+       padding: 10px;
+       display: none;
+    }
+
+    #back{
+        position: fixed;
+        width: 100%;
+        background-color: #2b2b33c7;
+        height: 102%;
+        margin-left: 320px;
+        display: none;
+    }
+    
+
+    .nav li{
+        display: block;
+        padding: 20px;
+        margin-left: 20px;
+    }
+
+    a:hover{
+        color: white;
+    }
+
+    .hide, .show{
+        padding: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        background: linear-gradient(90deg, rgb(80, 87, 63), rgb(89, 95, 70), rgb(116, 122, 99))
+    }
+
+    .ni{
+        border-bottom: 1px solid black;
+    }
+
+    .nav img{
+        width: 15px;
+        padding: 15px;
+        margin-top: 15px;
+        cursor: pointer;
+        display: block;
+    }
+
+    #menu{
+        display: block;
+        float: left;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        position: absolute;
+    }
+
+    #exit{
+        background-color: white
     }
 
     .c1{
         margin-top: -10px;
+        
     }
+
     #cel{
         margin-top: 40px;
     }
 
+    #cel span{
+        font-size: 22px;
+    }
+
+    .foot{
+        padding-top: 50px;
+        text-align: start;
+        font-size: 12px;
+        height: 100px;
+    }
+
+    .iconFoot{
+        padding-right:20px;
+        width: 70px;
+    }
+
+    .logo{
+        width: 70px;
+        margin-left: calc(50% - 30px);
+    }
+
+    .rect:hover{
+        transform: none;
+    }
 }}
+
+

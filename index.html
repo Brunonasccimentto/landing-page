@@ -12,22 +12,27 @@
 <body>
 
     <div id="inicio" class="conteiner">
+        
+        <div class=" c1">
 
-        <div class=" c1"> 
-
+            
+            <img id="menu" src="./assets/menu-aberto.png" alt="">
             <img class="logo" src="assets/logo.png" alt="logo">
 
             <ul class="nav">
-
-                <li> <a href="#inicio"> Início </a> </li>
-                <li> <a href=""> Sobre a empresa </a> </li>
-                <li> <a href="#i4"> Areas de atuação </a> </li>
-                <li> <a href=""> Trabalhe conosco </a> </li>
-                <li> <a href="#cel">  contato  </a></li>
-                <li> <button id="show"> Converse com um advogado</button> </li>
-                <li> <button id="hide"> Converse com um advogado</button> </li>
-
+                <img src="./assets/botao-x.png" alt="">
+                
+                <li class="navItem ni"> <a href="#inicio"> Início </a> </li>
+                <li class="navItem ni"> <a href=""> Sobre a empresa </a> </li>
+                <li class="navItem ni"> <a href="#i4"> Areas de atuação </a> </li>
+                <li class="navItem ni"> <a href=""> Trabalhe conosco </a> </li>
+                <li class="navItem ni"> <a href="#cel">  contato  </a></li>
+                
+                <button class="show ni"> Converse com um advogado </button> 
+                <button class="hide ni"> Converse com um advogado </button></a> 
             </ul>
+
+            <div id="back"></div>
         
         </div>
 
@@ -55,11 +60,13 @@
 
             </div>
 
-            <div class="formulario">
+            <div class="formulario" id="form">
                 <div class="topForm">
 
                 <img id="sup" src="./assets/support.png" alt="">
+                <img id="exit" src="./assets/botao-x.png" alt="">
                 <h3><strong>Converse com um advogado</strong></h3>
+                
                 <p> Preencha o campo abaixo com uma breve explicação do seu problema:</p>
                 </div>
                 <form method="post"
@@ -249,16 +256,13 @@
                 <div class="gmap_canvas">
                     <iframe width="1000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=congresso%20nacional&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <a href="https://123movies-to.org"></a><br>
-                    <style>.mapouter{position:relative;text-align:center;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+                    <style>.mapouter{position:static;text-align:center;height:500px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
                 </div>
             </div>
         </div>
 
-
-
-    <script src="./script.js"></script>
 </body>
-
+   
 <footer>
 
     <div id="cel" class="cell">
@@ -267,10 +271,14 @@
 
     <div class="foot">
 
-        <img class="logo iconFoot" src="./assets/logo.png" alt="">
+        <img class="iconFoot" src="./assets/logo.png" alt="">
         <span> Escritório de advocacia no Plano piloto - Brasília, baseado em confiança, credibilidade, ética e qualidade em seus serviços.</span> <br><br>
         <span> Escritório de Advocacia © 2022 - Todos os direitos reservados </span>
     </div>
 
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./script.js"></script>
+
 </html>
