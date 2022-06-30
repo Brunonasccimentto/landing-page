@@ -10,7 +10,7 @@
 
     $("#menu").click(()=>{
         nav.slideDown(2000)
-        back.slideDown(2000)
+        back.fadeIn(2000)
     })
 
     nav.find("img").click(()=>{
